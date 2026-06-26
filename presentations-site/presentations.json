@@ -1,5 +1,12 @@
 [
   {
+    "slug": "drop-test",
+    "title": "Drop Test",
+    "description": "Add a description for this deck.",
+    "date": "2026-06-26",
+    "tag": "Test"
+  },
+  {
     "slug": "power-to-prosper-keynote",
     "title": "The Power to Prosper Keynote",
     "description": "Add a description for this deck.",
