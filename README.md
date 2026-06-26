@@ -17,6 +17,23 @@ of presentation decks, deployed on Vercel.
   is served at `https://presentations.kapchatfield.com/q3-keynote/`.
 - Every push to `main` triggers an automatic Vercel redeploy.
 
+## Add a presentation — drag and drop (easiest)
+
+There's a Mac app called **Publish Presentation** (on the Desktop). Drag any
+presentation `.html` file onto its icon. It asks for a title and a tag, then
+publishes and pushes automatically — the deck is live in about a minute. No
+Terminal needed.
+
+The app is a thin wrapper around the scripts below. Its source is
+[`publish-app.applescript`](publish-app.applescript); rebuild it any time with:
+
+```bash
+osacompile -o ~/Desktop/"Publish Presentation.app" publish-app.applescript
+```
+
+First launch only: macOS may warn it's from an unidentified developer — right-click
+the app → **Open** → **Open** to allow it. After that, plain drag-and-drop works.
+
 ## Add a presentation — with the script (recommended)
 
 From the repo root:
