@@ -5,66 +5,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kap Chatfield · Presentations</title>
   <meta name="description" content="Presentation archive for Kap Chatfield." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --bg: #0f0e13;
-      --panel: #1a1822;
-      --panel-hover: #221f2e;
-      --border: #2e2a3d;
-      --lavender: #b6a6e8;
-      --gold: #d4af37;
-      --text: #f3f1f8;
-      --muted: #9b95ad;
+      --bg: #000000;
+      --panel: #0b0b0d;
+      --panel-hover: #121214;
+      --border: #1c1c20;
+      --border-hover: #8D82FE;
+      --lavender: #8D82FE;
+      --text: #ffffff;
+      --muted: #8a8a92;
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       background: var(--bg);
       color: var(--text);
-      font-family: 'Lato', system-ui, sans-serif;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
       line-height: 1.6;
       min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
     }
-    .wrap { max-width: 1080px; margin: 0 auto; padding: 80px 28px 100px; }
+    .wrap { max-width: 1080px; margin: 0 auto; padding: 72px 28px 100px; }
     header { margin-bottom: 56px; border-bottom: 1px solid var(--border); padding-bottom: 36px; }
-    .eyebrow {
-      font-size: 13px; letter-spacing: 0.28em; text-transform: uppercase;
-      color: var(--gold); font-weight: 700; margin-bottom: 14px;
+    .wordmark {
+      font-weight: 700; font-size: 15px; letter-spacing: -0.01em; color: var(--text);
+      margin-bottom: 30px; display: inline-block;
     }
+    .wordmark .dot { color: var(--lavender); }
     h1 {
-      font-family: 'Playfair Display', serif; font-weight: 900;
-      font-size: clamp(38px, 6vw, 60px); line-height: 1.05; letter-spacing: -0.01em;
+      font-weight: 700; font-size: clamp(40px, 6.5vw, 64px); line-height: 1.02;
+      letter-spacing: -0.03em;
     }
     h1 .accent { color: var(--lavender); }
-    .sub { color: var(--muted); margin-top: 16px; font-size: 17px; max-width: 540px; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
+    .sub { color: var(--muted); margin-top: 18px; font-size: 17px; max-width: 520px; font-weight: 300; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; }
     .card {
       display: block; background: var(--panel); border: 1px solid var(--border);
-      border-radius: 14px; padding: 26px 26px 24px; text-decoration: none; color: inherit;
-      transition: transform 0.18s ease, background 0.18s ease, border-color 0.18s ease;
+      border-radius: 10px; padding: 26px 26px 24px; text-decoration: none; color: inherit;
+      transition: transform 0.16s ease, background 0.16s ease, border-color 0.16s ease;
     }
-    .card:hover { transform: translateY(-3px); background: var(--panel-hover); border-color: var(--lavender); }
+    .card:hover { transform: translateY(-2px); background: var(--panel-hover); border-color: var(--border-hover); }
     .card .tag {
-      display: inline-block; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
-      color: var(--lavender); border: 1px solid var(--border); border-radius: 999px;
-      padding: 4px 11px; margin-bottom: 16px; font-weight: 700;
+      display: inline-block; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--lavender); border: 1px solid var(--border); border-radius: 4px;
+      padding: 4px 10px; margin-bottom: 16px; font-weight: 700;
     }
-    .card h2 { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 23px; line-height: 1.2; margin-bottom: 10px; }
-    .card p { color: var(--muted); font-size: 15px; }
-    .card .date { color: var(--gold); font-size: 13px; margin-top: 18px; font-weight: 700; letter-spacing: 0.04em; }
+    .card h2 { font-weight: 700; font-size: 22px; line-height: 1.18; letter-spacing: -0.02em; margin-bottom: 10px; }
+    .card p { color: var(--muted); font-size: 15px; font-weight: 300; }
+    .card .date { color: var(--muted); font-size: 12px; margin-top: 18px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
     .empty, .error { color: var(--muted); padding: 40px 0; font-size: 17px; }
     .error { color: #e89b9b; }
-    footer { margin-top: 70px; color: var(--muted); font-size: 13px; letter-spacing: 0.04em; }
+    footer { margin-top: 72px; color: var(--muted); font-size: 13px; letter-spacing: 0.02em; }
     footer a { color: var(--lavender); text-decoration: none; }
   </style>
 </head>
 <body>
   <div class="wrap">
     <header>
-      <div class="eyebrow">Kap Chatfield</div>
-      <h1>The <span class="accent">Presentation</span> Archive</h1>
+      <span class="wordmark"><span class="dot">•</span>kapchatfield</span>
+      <h1>Presentations<span class="accent">.</span></h1>
       <p class="sub">Every deck, in one place. Built to be found, shared, and kept.</p>
     </header>
 
@@ -73,7 +72,7 @@
     </main>
 
     <footer>
-      Hosted at <a href="https://presentations.kapchatfield.com">presentations.kapchatfield.com</a>
+      presentations.kapchatfield.com
     </footer>
   </div>
 
@@ -88,7 +87,6 @@
           gallery.innerHTML = '<div class="empty">No presentations yet. Add one to presentations.json.</div>';
           return;
         }
-        // newest first by date when present
         items.sort((a, b) => String(b.date || '').localeCompare(String(a.date || '')));
         gallery.innerHTML = items.map(function (it) {
           var tag = it.tag ? '<span class="tag">' + esc(it.tag) + '</span>' : '';
